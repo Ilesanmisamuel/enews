@@ -1,0 +1,8 @@
+{
+  "name": "ionic-angular-enews",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "fb546171"
+}

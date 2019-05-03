@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title text-center>
+      Contact Us
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background-color">
+    <form (ngSubmit)="logForm()" >
+        <ion-item class="card-background-color">
+          <ion-label>Title:</ion-label>
+          <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+        </ion-item>
+        <ion-item class="card-background-color">
+          <ion-label>Message:</ion-label>
+          <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+        </ion-item>
+        <ion-button color="primary" ion-button type="submit" shape="round" expand="full">Send</ion-button>
+      </form>
+      <h2 text-center class="background-color">Location</h2>
+      <h4 class="background-color">Address: 601 Park Point Dr</h3>
+      <h4 class="background-color">Phone: 585-xxx-xxxx</h3>
+      <div #mapElement class="map"></div>
+</ion-content>

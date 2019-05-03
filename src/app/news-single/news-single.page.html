@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+  <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{article.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="card-background-color">
+  <ion-img [src]="article.urlToImage"></ion-img>
+  <h3 class="card-background-color">{{article.title}}</h3>
+  <p class="card-background-color"><br>{{article.content}}</p>
+
+</ion-content>

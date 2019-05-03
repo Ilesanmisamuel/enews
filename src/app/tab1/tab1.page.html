@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title text-center>
+      Gossip News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-color">
+  <ion-card *ngFor="let article of data?.articles" (click)="onGoToNewsSinglePage(article)" class="card-background-color">
+      <ion-img [src]="article.urlToImage"></ion-img>
+    
+    <ion-card-content>
+      <ion-card-title class="card-background-color">{{article.title}}</ion-card-title>
+      <p><br>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
